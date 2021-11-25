@@ -1,0 +1,37 @@
+.item-list-component {
+    display: flex;
+    justify-content: center;
+    .item-list-container{
+        width: 700px;
+        .MuiPaper-root {
+            margin: 15px 0;
+            border: 1px solid rgb(236, 188, 188);
+            .item-card-header{
+                background-color: rgb(158, 155, 155);
+                display: flex;
+                span{
+                    margin: 10px auto;
+                    text-transform: capitalize;
+                }
+            }
+            .item-card-body{
+                display: flex;
+                flex-direction: column;
+                .item-button{
+                    width: 250px;
+                    margin: 0 auto;
+                }
+                .item-photo{
+                    margin: 10px 0;
+                    .center {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                      }
+                }
+            }
+            
+        }
+    }
+}
