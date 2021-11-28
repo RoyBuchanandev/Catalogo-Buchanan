@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button} from "@material-ui/core";
+import ItemCount from "./ItemCounter/ItemCount";
 
 
 export default function Item({ item }) {
@@ -16,6 +17,7 @@ export default function Item({ item }) {
         <span>$ {item.price}</span>
         <Button variant = {"outlined"} className = "item-button"> Ver detalle del producto </Button>
         <span>stock disponible: {item.stock}</span>
+        <ItemCount initial ={1} stock = {item.stock}/>
       </div>
     </Card>
   );

@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailsContainer/ItemDetailContainer';
+import NavBarComp from './NavBar/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Route , Routes} from "react-router-dom";
+import AppRoutes from './AppRoutes';
 
 function App() {
   return (
     <div className="App">
-      <ItemListContainer/>
+      <BrowserRouter>
+    <NavBarComp/>
+    <AppRoutes/>
+      </BrowserRouter>
     </div>
   );
 }
