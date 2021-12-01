@@ -1,3 +1,33 @@
+
+# GRACIAS POR VISITAR EL REPOSITORIO DE SALAD CLO E-COMMERCE
+
+## Introducción: 🚀
+
+Salad Clo es una marca de ropa urbana que busca plasmar un estilo en prendas únicas.
+Este proyecto se trata de el primer e-commerce de la marca que posteriormente se usara para vender
+a traves de todo el país de manera online
+
+
+## Construido con 🛠️
+
+* [React Js](https://reactjs.org/) 
+* [Javascript](https://www.javascript.com/) 
+* [Html y CSS] 
+
+
+
+## Autores ✒️
+
+* **Roy Buchanan** - [RoyBuchanandev](https://github.com/RoyBuchanandev)
+
+
+## Gratitud 🎁
+
+* Gracias a CoderHouse
+* Gracias a mi tutor y mis compañerxs
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
