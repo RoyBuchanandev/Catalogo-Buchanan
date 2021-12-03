@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { items } from "../../utils/Items";
 import ItemDetail from "./ItemDetail";
 
-export default function ItemDetailContainer({id}) {
+export default function ItemDetailContainer({ id }) {
   const [item, setItem] = useState(null);
 
   useEffect(() => {
@@ -16,12 +16,8 @@ export default function ItemDetailContainer({id}) {
   };
 
   const getItemById = (id) => {
+    fetchItemById(id).then((item) => setItem(item));
+  };
 
-    fetchItemById (id) .then ((item) => setItem (item) )
-  }
-
-  return <div>
-
-      {item && <ItemDetail item = {item} />}
-  </div>;
+  return <div>{item && <ItemDetail item={item} />}</div>;
 }

@@ -1,5 +1,5 @@
 
-# GRACIAS POR VISITAR EL REPOSITORIO DE SALAD CLO E-COMMERCE
+# Gracias por visitar el repositorio de Salad Clo e-commerce 🚀
 
 ## Introducción: 🚀
 
@@ -12,8 +12,13 @@ a traves de todo el país de manera online
 
 * [React Js](https://reactjs.org/) 
 * [Javascript](https://www.javascript.com/) 
-* [Html y CSS] 
+ * [Material UI](https://mui.com/) 
 
+## Instalación
+
+[React Js](https://reactjs.org/docs/create-a-new-react-app.html)  npm i react
+
+[Material UI](https://mui.com/getting-started/installation/) npm install @material-ui/core
 
 
 ## Autores ✒️
@@ -27,6 +32,7 @@ a traves de todo el país de manera online
 * Gracias a mi tutor y mis compañerxs
 
 
+----------------------------------------
 
 # Getting Started with Create React App
 

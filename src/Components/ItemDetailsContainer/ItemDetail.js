@@ -5,7 +5,7 @@ import Item from '../ItemListContainer/Item/Item'
 export default function ItemDetail({item}) {
     return  ( 
         <div>
-        <Item item= {item}/>
+        <Item item= {item} />
         </div>
     )}
     
