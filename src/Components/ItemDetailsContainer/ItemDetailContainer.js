@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { items } from "../../utils/Items";
 import ItemDetail from "./ItemDetail";
+import { CartContext } from "../Context/CartContext";
 
 export default function ItemDetailContainer({ id }) {
   const [item, setItem] = useState(null);
