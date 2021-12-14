@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { BsFillTrashFill } from 'react-icons/bs'
+import { CartContext } from './Context/CartContext'
 
-function Cart() {
+const Cart = ({name, price, stock, id}) => {
+
+    const {removeAllItem} = useContext(CartContext)
+
     return (
         <div>
             

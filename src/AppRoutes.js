@@ -4,6 +4,7 @@ import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./Components/ItemDetailsContainer/ItemDetailContainer";
 import { Route , Routes} from "react-router";
 import { items } from "./utils/Items";
+import { CartView } from "./Components/CartView/CartView";
 
 
 export default function AppRoutes() {
@@ -13,6 +14,7 @@ export default function AppRoutes() {
         <Route exact path="/" element={<ItemListContainer />} />
        <Route path="category/:categoryId" element={<ItemListContainer/>} />
        <Route exact path="/item/:id" element={<ItemDetailContainer />} />
+       <Route path="/cartView" element={ <CartView /> } />
       </Routes>
     </div>
   );

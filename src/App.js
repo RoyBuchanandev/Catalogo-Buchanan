@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import { CartContextProvider } from "./Components/Context/CartContext";
+import Cart from "./Components/Cart";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <CartContextProvider>
           <NavBarComp />
           <AppRoutes />
+         <Cart/>
         </CartContextProvider>
       </BrowserRouter>
     </div>

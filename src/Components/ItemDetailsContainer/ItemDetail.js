@@ -15,6 +15,8 @@ const ItemDetail = ({item}) => {
     return (
         <div>
             <Item item={item}/>
+            
+
         </div>
 
     )

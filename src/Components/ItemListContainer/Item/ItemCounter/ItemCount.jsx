@@ -2,7 +2,7 @@ import React, { useState,useContext } from 'react';
 import Button from '@material-ui/core/Button';
 import "./ItemCount.scss";
 import { Link } from 'react-router-dom'
-import CartContext from '../../../Context/CartContext';
+import { CartContext } from '../../../Context/CartContext';
 import Cart from '../../../Cart';
 
 const ItemCount = ({ initial, stock, handleOnAdd }) => {
@@ -28,7 +28,9 @@ const ItemCount = ({ initial, stock, handleOnAdd }) => {
       </div>
 
       <div>
-        <Button  className='btn btn-outline-danger mt-3 mb-2' onClick={handleOnClick}><strong>Agregar al carrito: {count} unidad/es</strong></Button><br />
+        
+        <Button variant="contained" className='btn btn-outline-danger mt-3 mb-2' onClick={handleOnClick}><strong>Agregar al carrito: {count} unidad/es</strong></Button><br />
+        
 
       </div>
 

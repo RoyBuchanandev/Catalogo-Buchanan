@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { categories } from '../utils/categories'
-import CarWidget from "./CarWidget"
+import { CartWidget } from './CartWidget'
+import ItemCount from '../Components/ItemListContainer/Item/ItemCounter/ItemCount'
+
+
 
 export default class NavBarComp extends Component {
     render() {
@@ -14,7 +17,7 @@ export default class NavBarComp extends Component {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="#home">Contacto</Nav.Link>
+        <Nav.Link href="#home">Contacto </Nav.Link>
         <NavDropdown title="Categorias" id="basic-nav-dropdown">
             {categories.map((category)=>
                 <NavDropdown.Item><NavLink to={`category/${category.id}`}>{category.name}</NavLink></NavDropdown.Item>
@@ -28,7 +31,9 @@ export default class NavBarComp extends Component {
       </Nav>
     </Navbar.Collapse>
   </Container>
+  <CartWidget />
 </Navbar>
+
             </div>
         )
     }

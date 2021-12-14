@@ -5,6 +5,7 @@ import Item from "./Item/Item";
 import ItemList from "./ItemList/ItemList";
 import "./itemListContainer.scss";
 
+
 export default function ItemListContainer() {
   const { categoryId } = useParams();
   // useEffect(() => {
