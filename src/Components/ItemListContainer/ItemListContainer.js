@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { items } from "../../utils/Items";
-import Item from "./Item/Item";
 import ItemList from "./ItemList/ItemList";
 import "./itemListContainer.scss";
-
+import { collection, getDocs } from "firebase/firestore/lite";
+import { database } from "../../Firebase/Config";
 
 export default function ItemListContainer() {
   const { categoryId } = useParams();
@@ -13,22 +13,19 @@ export default function ItemListContainer() {
   // }, [categoryId]);
 
   const filterItems = () => {
-    return categoryId ? itemsList.filter ((item) => item.categoryId === categoryId) : itemsList
-  }
-
-
-  useEffect(() => {
-    // "pido lista de items"
-    getItemsList();
-  }, []);
-
-  const getItemsList = () => {
-    fetchItemList.then((itemList) => setItemsList(itemList));
+    return categoryId
+      ? itemsList.filter((item) => item.categoryId === categoryId)
+      : itemsList;
   };
 
-  let fetchItemList = new Promise((resolve, reject) => {
-    setTimeout(() => resolve(items), 2000);
-  });
+  useEffect(() => {
+    const productosRef = collection(database, "productos");
+    getDocs(productosRef).then((resp) => {
+      const itemsResp = resp.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      console.log(itemsResp);
+      setItemsList(items);
+    });
+  }, []);
 
   const [itemsList, setItemsList] = useState([]);
   // const [filter, setFilter] = useState()

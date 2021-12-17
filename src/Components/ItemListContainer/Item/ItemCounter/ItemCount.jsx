@@ -4,6 +4,8 @@ import "./ItemCount.scss";
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../../Context/CartContext';
 import Cart from '../../../Cart';
+import Item from '../Item';
+import { NavLink } from 'react-bootstrap';
 
 const ItemCount = ({ initial, stock, handleOnAdd }) => {
   const [count, setCount] = useState(initial);
@@ -19,6 +21,7 @@ const ItemCount = ({ initial, stock, handleOnAdd }) => {
   };
 
   return (
+    
     <div className="item-count-container">
       <div className="op-buttons-container">
         <Button variant="outlined" className="op-button" onClick={() => handleOp('-')}> - </Button>

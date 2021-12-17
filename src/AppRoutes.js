@@ -3,8 +3,8 @@ import React from "react";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailsContainer/ItemDetailContainer";
 import { Route , Routes} from "react-router";
-import { items } from "./utils/Items";
 import { CartView } from "./Components/CartView/CartView";
+
 
 
 export default function AppRoutes() {
