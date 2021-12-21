@@ -28,11 +28,12 @@ export const CartView = () => {
                 }
             </section>
             <hr/>
+            <h3>precio: $ {totalPrice()}</h3>
             <div>
                 
                 <button className="btn btn-danger" onClick={removeAllItem}>Vaciar carrito <BsFillTrashFill/></button>
                 
-                <button className="btn btn-success mx-2">Terminar mi compra</button>
+                <Link to = "/Checkout" className="btn btn-success mx-2">Terminar mi compra</Link>
                 
             </div>
         </div>
