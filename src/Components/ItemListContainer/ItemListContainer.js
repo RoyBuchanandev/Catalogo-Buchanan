@@ -8,9 +8,6 @@ import { database } from "../../Firebase/Config";
 
 export default function ItemListContainer() {
   const { categoryId } = useParams();
-  // useEffect(() => {
-  //       setFilter(categoryId)
-  // }, [categoryId]);
 
   const filterItems = () => {
     return categoryId

@@ -13,7 +13,7 @@ function App() {
         <CartContextProvider>
           <NavBarComp />
           <AppRoutes />
-         <Cart/>
+          <Cart />
         </CartContextProvider>
       </BrowserRouter>
     </div>
